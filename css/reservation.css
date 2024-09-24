@@ -1,0 +1,248 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+section{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+
+.heading{
+    font-size: 3.5rem;
+    color: #002c4e;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+
+/* header */
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 .5rem 1rem #0000001a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 9%;
+}
+
+.header .logo{
+    font-size: 2rem;
+    letter-spacing: -.1em;
+    color: #002c4e;
+}
+
+.header .logo i{
+    color: #004578;
+    padding-right: .5rem;
+}
+
+.header .navbar .nav{
+    font-size: 1.2rem;
+    color: black;
+    margin: 0 .9rem;
+}
+
+.header .navbar .pri-btn{
+    color: black;
+    font-size: .97rem;
+    font-weight: bold;
+    border: 2px solid  #002c4e;
+    border-radius: 2rem;
+    background: none;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    margin-left: .5rem;
+}
+
+
+.header .navbar .nav:hover{
+    color: #002c4e;
+    font-weight: bold;
+}
+
+.header .navbar .pri-btn:hover{
+    background-color: #002c4e;
+    color: white;
+    transition: 0.2s;
+}
+
+
+#menu-btn{
+    display: none;
+    font-size: 2.1rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: black;
+}
+
+#menu-btn:hover{
+    color: #002c4e;
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 18rem;
+        height: 25rem;
+        background: white;
+        border-radius: .5rem;
+        border: #002847 2px solid;
+        text-align: center;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar .nav{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+.form-container {
+    margin: 40px auto 50px auto;
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: #002847;
+    padding: 30px 60px 60px 60px;
+    border-radius: 8px;
+}
+
+.form-container h1 {
+    font-size: 2.6rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: white;
+}
+  
+.form .input-box select{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: .93rem;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    margin-top: 8px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+  
+.form .col{
+    display: flex;
+    column-gap: 65px;
+}
+
+.form .col select{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    margin-top: 8px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.form .check{
+    color: white;
+    margin-top: 25px;
+}
+
+input[type="checkbox"]{
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+  
+.form button {
+    height: 55px;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;  
+    background: white;
+}
+
+.form button:hover {
+    background: #a1a1a1 ;
+    transition: .6s;
+}
+
+p{
+    margin-top: 15px;
+    color: white;
+    font-size: 1rem;
+    text-decoration: solid;
+    position: absolute;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .form .col{
+      flex-wrap: wrap;
+      column-gap: 0px;
+    }
+
+
+}
+  

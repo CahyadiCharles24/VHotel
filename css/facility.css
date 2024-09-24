@@ -1,0 +1,810 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+section{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+
+.heading{
+    font-size: 3.5rem;
+    color: #002c4e;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+/* header */
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 .5rem 1rem #0000001a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 9%;
+}
+
+.header .logo{
+    font-size: 2rem;
+    letter-spacing: -.1em;
+    color: #002c4e;
+}
+
+.header .logo i{
+    color: #004578;
+    padding-right: .5rem;
+}
+
+.header .navbar .nav{
+    font-size: 1.2rem;
+    color: black;
+    margin: 0 .9rem;
+}
+
+.header .navbar .pri-btn{
+    color: black;
+    font-size: .97rem;
+    font-weight: bold;
+    border: 2px solid  #002c4e;
+    border-radius: 2rem;
+    background: none;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    margin-left: .5rem;
+}
+
+
+.header .navbar .nav:hover{
+    color: #002c4e;
+    font-weight: bold;
+}
+
+.header .navbar .pri-btn:hover{
+    background-color: #002c4e;
+    color: white;
+    transition: 0.2s;
+}
+
+
+#menu-btn{
+    display: none;
+    font-size: 2.1rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: black;
+}
+
+#menu-btn:hover{
+    color: #002c4e;
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 18rem;
+        height: 25rem;
+        background: white;
+        border-radius: .5rem;
+        border: #002847 2px solid;
+        text-align: center;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar .nav{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+/* end */
+.title{
+    margin-bottom: 50px;
+}
+
+.title img{
+    width: 100%;
+    position: relative;
+}
+
+.title h1{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-weight: 900;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    top: 44%;
+    left: 10%;
+    letter-spacing: 1.2em;
+}
+
+
+
+.pool{
+    text-align: center;
+    margin-bottom: 6.5%; 
+}
+
+.pool p{
+    color: #0d214a;
+}
+
+.desc{
+    margin-bottom: 10px;
+}
+
+.pool img{
+    width: 87%;
+    border-radius: 3.5px;
+}
+
+.pool .desc h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #1f415b;
+}
+.pool .desc p{
+    font-size: .92rem;
+    font-weight: lighter;
+    width: 57%;
+    margin-left: 22%;
+}
+
+.pool h3{
+    font-size: 1rem;
+    color: #1f415b;
+}
+
+.pool .jam p{
+    font-size: 0.9rem;
+}
+
+.pool .policy p{
+    font-size: 0.9rem;
+}
+.pool .menu{
+    margin-bottom: 20px;
+}
+
+.pool .menu a{
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.pool .res{
+    background-color: #002c4e;
+    color: white;
+    padding: .2rem 1.7rem ;
+}
+
+.pool .res:hover{
+    background:none;
+    border: 1px solid #002c4e;
+    color: #002c4e;
+    transition: .456s;
+}
+
+.pool .con{
+    margin-top: 3px;
+}
+
+
+
+.shspa{
+    text-align: center;
+    margin-bottom: 6.5%; 
+}
+
+.shspa p{
+    color: #0d214a;
+}
+
+.shspa img{
+    width: 87%;
+    border-radius: 3.5px;
+}
+
+.shspa h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #1f415b;
+}
+.shspa .desc p{
+    font-size: .92rem;
+    font-weight: lighter;
+    width: 57%;
+    margin-left: 22%;
+}
+
+.shspa h3{
+    font-size: 1rem;
+    color: #1f415b;
+}
+
+.shspa .jam{
+    margin-bottom: 35px;
+}
+
+.shspa .jam p{
+    font-size: 0.9rem;
+}
+
+.shspa .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 18rem));
+    grid-gap: 0px; 
+    width: 80%;
+    margin-left: 11.4%;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+
+.shspa .box-container .box{
+    text-align: center;
+    width: 72%;
+    height: 100%;
+}
+
+.shspa .box-container .box img{
+    height: 2rem;
+    width: 80%;
+    height: 60%;
+}
+
+
+
+.footer{
+    background: #002847;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: .7rem;
+}
+
+.footer .box-container .box .logo{
+    margin-left: 45px;
+    margin-top: 25px;
+    font-size: 2.6rem;
+    letter-spacing: -.1em;
+    color: white;
+}
+
+
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box a{
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    padding: .46rem 0;
+}
+
+.footer .box-container .box a i{
+    color: white;
+    padding-right: .28rem;
+}
+
+.footer .box-container .box-link h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box-link a{
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    padding: .46rem 0;
+    
+}
+
+.footer .box-container .box-link a i{
+    color: white;
+    padding-right: .28rem;
+}
+
+.footer .box-container .box-link a:hover{
+    text-decoration: underline;
+}
+
+.footer .sosmed{
+    padding-top: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.footer .logo-sosmed{
+    display: flex;
+    margin-left: 20px;
+}
+
+.footer .logo-sosmed a {
+    margin-right: 20px;
+}
+
+.footer .credit{
+    font-size: .8rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    color: white;
+   padding-bottom: 4px;
+}
+
+.footer .credit .text{
+    margin-left: 45px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    html{
+        overflow-x: hidden;
+    }
+
+    .heading{
+        font-size: 2.8rem;
+        color: #002c4e;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .title h1{
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-weight: 900;
+        font-size: 4rem;
+        text-transform: uppercase;
+        top: 35%;
+        left: 10%;
+        letter-spacing: .9em;
+    }
+
+    .pool{
+        text-align: center;
+        margin-bottom: 6.5%; 
+    }
+    
+    .pool p{
+        color: #0d214a;
+    }
+    
+    .desc{
+        margin-bottom: 10px;
+    }
+    
+    .pool img{
+        width: 87%;
+        border-radius: 3.5px;
+    }
+    
+    .pool .desc h2{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #1f415b;
+    }
+    .pool .desc p{
+        font-size: .8em;
+        font-weight: lighter;
+        width: 57%;
+        margin-left: 22%;
+    }
+    
+    .pool h3{
+        font-size: .9rem;
+        color: #1f415b;
+    }
+    
+    .pool .jam p{
+        font-size: .78rem;
+    }
+    
+    .pool .policy p{
+        font-size: 0.9rem;
+    }
+    .pool .menu{
+        margin-bottom: 20px;
+    }
+    
+    .pool .menu a{
+        font-size: 0.8rem;
+        text-decoration: underline;
+        font-style: italic;
+    }
+    
+    .pool .res{
+        background-color: #002c4e;
+        color: white;
+        font-size: .9rem;
+        padding: .2rem 1.7rem ;
+    }
+    
+    .pool .con{
+        font-size: .9rem;
+        margin-top: 3px;
+    }
+
+    .shspa{
+        text-align: center;
+        margin-bottom: 6.5%; 
+    }
+    
+    .shspa p{
+        color: #0d214a;
+    }
+    
+    .shspa img{
+        width: 87%;
+        border-radius: 3.5px;
+    }
+    
+    .shspa h2{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #1f415b;
+    }
+    .shspa .desc p{
+        font-size: .8rem;
+        font-weight: lighter;
+        width: 57%;
+        margin-left: 22%;
+    }
+    
+    .shspa h3{
+        font-size: .9rem;
+        color: #1f415b;
+    }
+    
+    .shspa .jam{
+        margin-bottom: 35px;
+    }
+    
+    .shspa .jam p{
+        font-size: 0.8rem;
+    }
+    
+    .shspa .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 18rem));
+        grid-gap: 0px; 
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 20px;
+        justify-items: center;
+    }
+    
+    
+    .shspa .box-container .box{
+        text-align: center;
+        width: 72%;
+        height: 100%;
+    }
+    
+    .shspa .box-container .box img{
+        height: 2rem;
+        width: 80%;
+        height: 60%;
+    }
+
+
+    .footer .box-container .box .logo{
+        margin-left: 45px;
+        margin-top: 25px;
+        font-size: 2rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+    
+    .footer .box-container .box h3{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box a{
+        font-size: .95rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+    }
+    
+    .footer .box-container .box a i{
+        color: white;
+        padding-right: .28rem;
+    }
+    
+    .footer .box-container .box-link h3{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box-link a{
+        font-size: .95rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+        
+    }
+    
+    .footer .box-container .box-link a i{
+        color: white;
+        padding-right: .28rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    html{
+        overflow-x: hidden;
+    }
+
+
+    .heading{
+        font-size: 1.6rem;
+        color: #002c4e;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .title h1{
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-weight: 900;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        top: 25%;
+        left: 15%;
+        letter-spacing: .5em;
+    }
+
+    .pool{
+        text-align: center;
+        margin-bottom: 6.5%; 
+    }
+    
+    .pool p{
+        color: #0d214a;
+        font-size: .6rem;
+    }
+    
+    .desc{
+        margin-bottom: 10px;
+    }
+    
+    .pool img{
+        width: 87%;
+        border-radius: 3.5px;
+    }
+    
+    .pool .desc h2{
+        font-size: .9rem;
+        font-weight: bold;
+        color: #1f415b;
+    }
+    .pool .desc p{
+        font-weight: lighter;
+        width: 57%;
+        margin-left: 22%;
+    }
+    
+    .pool h3{
+        font-size: .8rem;
+        color: #1f415b;
+    }
+    
+    
+    .pool .menu{
+        margin-bottom: 20px;
+    }
+    
+    .pool .menu a{
+        font-size: 0.8rem;
+        text-decoration: underline;
+        font-style: italic;
+    }
+    
+    .pool .res{
+        background-color: #002c4e;
+        color: white;
+        font-size: .9rem;
+        padding: .2rem 1.7rem ;
+    }
+    
+    .pool .con{
+        font-size: .9rem;
+        margin-top: 3px;
+    }
+
+    .shspa{
+        text-align: center;
+        margin-bottom: 6.5%; 
+    }
+    
+    .shspa p{
+        color: #0d214a;
+        font-size: 0.6rem;
+    }
+    
+    .shspa img{
+        width: 87%;
+        border-radius: 3.5px;
+    }
+    
+    .shspa h2{
+        font-size: .9rem;
+        font-weight: bold;
+        color: #1f415b;
+    }
+    .shspa .desc p{
+        font-weight: lighter;
+        width: 57%;
+        margin-left: 22%;
+    }
+    
+    .shspa h3{
+        font-size: .8rem;
+        color: #1f415b;
+    }
+    
+    .shspa .jam{
+        margin-bottom: 35px;
+    }
+    
+    .shspa .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 18rem));
+        grid-gap: 0px; 
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 20px;
+        justify-items: center;
+    }
+    
+    .shspa .box-container .box{
+        text-align: center;
+        width: 72%;
+        height: 100%;
+    }
+    
+    .shspa .box-container .box img{
+        height: 2rem;
+        width: 80%;
+        height: 60%;
+    }
+
+
+    .footer .box-container .box .logo{
+        margin-left: 45px;
+        margin-top: 25px;
+        font-size: 2rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+
+    .footer .box-container .box .logo{
+        margin-left: 40px;
+        margin-top: 25px;
+        font-size: 1.5rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+    
+    .footer .box-container .box h3{
+        font-size: .95rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box a{
+        font-size: .75rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+    }
+    
+    .footer .box-container .box a i{
+        color: white;
+        padding-right: .28rem;
+    }
+    
+    .footer .box-container .box-link h3{
+        font-size: .95rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box-link a{
+        font-size: .75rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+        
+    }
+    
+    .footer .box-container .box-link a i{
+        color: white;
+        padding-right: .28rem;
+    }
+
+    .footer .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        gap: .7rem;
+    }
+
+    .footer .sosmed{
+        padding-top: 1.5rem;
+        color: white;
+        font-size: .95rem;
+    }
+    
+    
+    .footer .logo-sosmed{
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    .footer .logo-sosmed a {
+        margin-right: 10px;
+    }
+
+    .footer .credit{
+        font-size: .6rem;
+        text-align: left;
+        margin-top: 1rem;
+        padding-top: .5rem;
+        color: white;
+       padding-bottom: 4px;
+    }
+    
+    .footer .credit .text{
+        margin-left: 40px;
+    }
+
+}

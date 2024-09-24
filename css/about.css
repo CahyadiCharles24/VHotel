@@ -1,0 +1,650 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+section{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+.heading{
+    font-size: 3.5rem;
+    color: #002c4e;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+
+/* Header */ 
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 .5rem 1rem #0000001a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 9%;
+}
+
+.header .logo{
+    font-size: 2rem;
+    letter-spacing: -.1em;
+    color: #002c4e;
+}
+
+.header .logo i{
+    color: #004578;
+    padding-right: .5rem;
+}
+
+.header .navbar .nav{
+    font-size: 1.2rem;
+    color: black;
+    margin: 0 .9rem;
+}
+
+.header .navbar .pri-btn{
+    color: black;
+    font-size: .97rem;
+    font-weight: bold;
+    border: 2px solid  #002c4e;
+    border-radius: 2rem;
+    background: none;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    margin-left: .5rem;
+}
+
+
+.header .navbar .nav:hover{
+    color: #002c4e;
+    font-weight: bold;
+}
+
+.header .navbar .pri-btn:hover{
+    background-color: #002c4e;
+    color: white;
+    transition: 0.2s;
+}
+
+
+#menu-btn{
+    display: none;
+    font-size: 2.1rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: black;
+}
+
+#menu-btn:hover{
+    color: #002c4e;
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 18rem;
+        height: 25rem;
+        background: white;
+        border-radius: .5rem;
+        border: #002847 2px solid;
+        text-align: center;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar .nav{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+/* end */
+
+.about{
+    margin-top: 40px;
+    margin-bottom: 68px;
+}
+
+
+
+.about .box h2{
+    font-size: 3.72rem;
+    color: #002c4e;
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-weight: normal;
+    letter-spacing: -.1em;
+    text-align: center;
+}
+
+.about .box p{
+    width: 64%;
+    font-size: .93rem;
+    color: #0c3453;
+    text-align: center;
+    margin-left: 20%;
+}
+
+/* Award */
+
+.awards .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 15rem));
+    grid-gap: 0px;
+    margin-bottom: 5.7%;
+    margin-left: 2%;
+    width: 100%;
+    justify-items: center;
+}
+
+
+.awards .box-container .box{
+    text-align: center;
+    width: 80%;
+    height: 100%;
+}
+
+.awards .box-container .box img{
+    height: 2rem;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 1.3rem;
+}
+
+.awards .box-container .box h3{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 535;
+}
+/* END Award */
+
+
+/* Location */
+
+.loc{
+    margin-bottom: 50px;
+}
+
+.loc .contain {
+    text-align: center;
+}
+
+.loc .contain .content{
+    margin-bottom: 1.8%;
+}
+
+.loc .contain .content img{
+    width: 68%;
+    margin-bottom: 6px;
+}
+
+.loc .contain h2{
+    font-size: 2.1rem;
+    color: #08263c;
+}
+
+
+.loc .contain .nearby p{
+    width: 56%;
+    margin-left: 22%;
+    padding-bottom: 13px;
+}
+
+.loc .line{
+    width: 70%;
+    margin-left: 16.5%;
+    border-bottom: 1px #002c4e solid;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* END LOCATION */
+
+
+/* partner */
+.partner{
+    margin-bottom: 4.7%;
+}
+
+.partner .heading{
+    margin-bottom: 2.7rem;
+}
+
+.partner .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 15rem));
+    grid-gap: 0px; 
+    width: 100%;
+    justify-items: center;
+    margin-left: 10%;
+}
+
+
+.partner .box-container .box{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.partner .box-container .box img{
+    height: 2rem;
+    width: 80%;
+    height: 60%;
+}
+
+/* END PARTNER */ 
+
+
+/* FOOTER */
+
+.footer{
+    background: #002847;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: .7rem;
+}
+
+.footer .box-container .box .logo{
+    margin-left: 45px;
+    margin-top: 25px;
+    font-size: 2.6rem;
+    letter-spacing: -.1em;
+    color: white;
+}
+
+
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box a{
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    padding: .46rem 0;
+}
+
+.footer .box-container .box a i{
+    color: white;
+    padding-right: .28rem;
+}
+
+.footer .box-container .box-link h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box-link a{
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    padding: .46rem 0;
+    
+}
+
+.footer .box-container .box-link a i{
+    color: white;
+    padding-right: .28rem;
+}
+
+.footer .box-container .box-link a:hover{
+    text-decoration: underline;
+}
+
+.footer .sosmed{
+    padding-top: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.footer .logo-sosmed{
+    display: flex;
+    margin-left: 20px;
+}
+
+.footer .logo-sosmed a {
+    margin-right: 20px;
+}
+
+.footer .credit{
+    font-size: .8rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    color: white;
+   padding-bottom: 4px;
+}
+
+.footer .credit .text{
+    margin-left: 45px;
+}
+
+/* END FOOTER */
+
+
+@media screen and (min-width :768px) and (max-width: 1023px) {
+
+    html{
+        overflow-x: hidden;
+    }
+
+    .awards .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 15rem));
+        grid-gap: 0px;
+        margin-bottom: 5.7%;
+        margin-left: 6%;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .footer .box-container .box .logo{
+        margin-left: 45px;
+        margin-top: 25px;
+        font-size: 2rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+    
+    .footer .box-container .box h3{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box a{
+        font-size: .95rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+    }
+    
+    .footer .box-container .box a i{
+        color: white;
+        padding-right: .28rem;
+    }
+    
+    .footer .box-container .box-link h3{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box-link a{
+        font-size: .95rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+        
+    }
+    
+    .footer .box-container .box-link a i{
+        color: white;
+        padding-right: .28rem;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 768px){
+
+    .heading{
+        font-size: 1.4rem;
+    }
+
+    .about .box h2{
+        font-size: 2.5rem;
+        color: #002c4e;
+        font-family: 'Jacques Francois Shadow', cursive;
+        font-weight: normal;
+        letter-spacing: -.1em;
+        text-align: center;
+    }
+    
+    .about .box p{
+        width: 64%;
+        font-size: .8rem;
+        color: #0c3453;
+        text-align: center;
+        margin-left: 20%;
+    }
+    
+    
+    .awards .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 15rem));
+        grid-gap: 0px;
+        margin-bottom: 5.7%;
+        margin-left: 5%;
+        width: 100%;
+        justify-items: center;
+    }
+    
+    
+    .awards .box-container .box{
+        text-align: center;
+        width: 80%;
+        height: 100%;
+    }
+    
+    .awards .box-container .box img{
+        height: 2rem;
+        width: 80%;
+        height: 60%;
+        margin-bottom: 1.3rem;
+    }
+    
+    .awards .box-container .box h3{
+        font-size: .7rem;
+        color: black;
+        font-weight: 535;
+    }
+
+    .loc{
+        margin-bottom: 50px;
+    }
+    
+    .loc .contain {
+        text-align: center;
+    }
+    
+    .loc .contain .content{
+        margin-bottom: 1.8%;
+    }
+
+    .loc .contain .content p{
+        font-size: .879rem;
+    }
+    
+    .loc .contain .content img{
+        width: 68%;
+        margin-bottom: 6px;
+    }
+    
+    .loc .contain h2{
+        font-size: 1.5rem;
+        color: #08263c;
+    }
+    
+    .loc .contain .nearby h3{
+        font-size: 1rem;
+    }
+
+    .loc .contain .nearby p{
+        width: 56%;
+        margin-left: 22%;
+        padding-bottom: 13px;
+        font-size: .8rem;
+    }
+    
+    .loc .line{
+        width: 70%;
+        margin-left: 16.5%;
+        border-bottom: 1px #002c4e solid;
+        margin-bottom: 15px;
+    }
+    
+    .partner{
+        margin-bottom: 3.7%;
+    }
+    
+    .partner .heading{
+        margin-bottom: 2.7rem;
+    }
+    
+    .partner .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 15rem));
+        grid-gap: 0px; 
+        width: 100%;
+        justify-items: center;
+        margin-left: 5%;
+    }
+    
+    
+    .partner .box-container .box{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .partner .box-container .box img{
+        height: 2rem;
+        width: 70%;
+        height: 60%;
+    }
+
+
+    .footer .box-container .box .logo{
+        margin-left: 45px;
+        margin-top: 25px;
+        font-size: 2rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+
+    .footer .box-container .box .logo{
+        margin-left: 40px;
+        margin-top: 25px;
+        font-size: 1.5rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+    
+    
+    
+    .footer .box-container .box h3{
+        font-size: .95rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box a{
+        font-size: .75rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+    }
+    
+    .footer .box-container .box a i{
+        color: white;
+        padding-right: .28rem;
+    }
+    
+    .footer .box-container .box-link h3{
+        font-size: .95rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box-link a{
+        font-size: .75rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+        
+    }
+    
+    .footer .box-container .box-link a i{
+        color: white;
+        padding-right: .28rem;
+    }
+
+    .footer .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        gap: .7rem;
+    }
+
+    .footer .sosmed{
+        padding-top: 1.5rem;
+        color: white;
+        font-size: .95rem;
+    }
+    
+    
+    .footer .logo-sosmed{
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    .footer .logo-sosmed a {
+        margin-right: 10px;
+    }
+
+    .footer .credit{
+        font-size: .6rem;
+        text-align: left;
+        margin-top: 1rem;
+        padding-top: .5rem;
+        color: white;
+       padding-bottom: 4px;
+    }
+    
+    .footer .credit .text{
+        margin-left: 40px;
+    }
+
+
+}

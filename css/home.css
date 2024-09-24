@@ -1,0 +1,866 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+section{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+
+.heading{
+    font-size: 3.5rem;
+    color: #002c4e;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+
+/* header */
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 .5rem 1rem #0000001a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 9%;
+}
+
+.header .logo{
+    font-size: 2rem;
+    letter-spacing: -.1em;
+    color: #002c4e;
+}
+
+.header .logo i{
+    color: #004578;
+    padding-right: .5rem;
+}
+
+.header .navbar .nav{
+    font-size: 1.2rem;
+    color: black;
+    margin: 0 .9rem;
+}
+
+.header .navbar .pri-btn{
+    color: black;
+    font-size: .97rem;
+    font-weight: bold;
+    border: 2px solid  #002c4e;
+    border-radius: 2rem;
+    background: none;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    margin-left: .5rem;
+}
+
+
+.header .navbar .nav:hover{
+    color: #002c4e;
+    font-weight: bold;
+}
+
+.header .navbar .pri-btn:hover{
+    background-color: #002c4e;
+    color: white;
+    transition: 0.2s;
+}
+
+
+#menu-btn{
+    display: none;
+    font-size: 2.1rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: black;
+}
+
+#menu-btn:hover{
+    color: #002c4e;
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 18rem;
+        height: 25rem;
+        background: white;
+        border-radius: .5rem;
+        border: #002847 2px solid;
+        text-align: center;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar .nav{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+/* end */
+
+/* home */
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+  
+.slides {
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+  
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+}
+  
+.slide img {
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+  
+h2{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.banner .slideshow c{
+    opacity: .4;
+    cursor: pointer;
+}
+
+.banner .slideshow c:hover{
+    opacity: 1;
+}
+
+.overlay p {
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+}
+  
+.next, .prev{
+    position: absolute;
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.next{
+    top: 40%;
+    right: 10px;
+}
+
+.prev{
+    top: 40%;
+    left: 10px;
+}
+
+
+/* end */
+
+
+/* about */
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 6rem;
+    padding-top: 8rem;
+    margin-bottom: 20px;
+}
+
+.about .row .content{
+    text-align: center;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: #002c4e;
+    padding: 2rem 0;
+}
+
+.about .row .content p{
+    font-size: 1.1rem;
+    color: #666;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about .row .content a{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* end */
+
+/* room  */
+.room{
+    margin-top: 2.8rem;
+}
+
+.room .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,2fr));
+    gap: 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.room .box {
+    background: white;
+    border: .1rem solid #28282833;
+    border-radius: .5rem;
+    box-shadow: 0 .8rem 1.3rem #0000001a;
+    margin-bottom: 4rem;
+}
+
+.room .box .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.room .box .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.room .box .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.room .box .content h3{
+    font-size: 2rem;
+    color: #002c4e;
+}
+
+.room .box .content p{
+    font-size: .9rem;
+    color: #414040;
+    padding: .5rem 0;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.room .box .content a{
+    color: white;
+    margin-left: 15%;
+    background-color: #005fa7;
+    border-radius: 4px;
+    padding: 10px 50px;
+}
+
+.room .box .content a:hover{
+    background-color: #002847;
+    transition: 0.5s;
+}
+
+
+
+/* end */
+
+/* Facilities */ 
+
+.facility .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 0px;
+    margin-bottom: 10%;
+    width: 100%;
+    justify-items: center;
+}
+
+
+.facility .box-container .box{
+    text-align: center;
+    width: 72%;
+    height: 100%;
+}
+
+.facility .box-container .box i{
+    height: 2rem;
+    font-size: 5rem;
+    color: #296796;
+    margin-bottom: 3.8rem;
+}
+
+.facility .box-container .box h3{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 535;
+}
+
+.facility .box-container .box:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    box-shadow: 0 .9rem 1.5rem hsla(0, 0%, 0%, 0.202);
+    z-index: 2 ;
+}
+/* End*/
+
+
+/* footer */
+
+.footer{
+    background: #002847;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: .7rem;
+}
+
+.footer .box-container .box .logo{
+    margin-left: 45px;
+    margin-top: 25px;
+    font-size: 2.6rem;
+    letter-spacing: -.1em;
+    color: white;
+}
+
+
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box a{
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    padding: .46rem 0;
+}
+
+.footer .box-container .box a i{
+    color: white;
+    padding-right: .28rem;
+}
+
+.footer .box-container .box-link h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box-link a{
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    padding: .46rem 0;
+    
+}
+
+.footer .box-container .box-link a i{
+    color: white;
+    padding-right: .28rem;
+}
+
+.footer .box-container .box-link a:hover{
+    text-decoration: underline;
+}
+
+.footer .sosmed{
+    padding-top: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.footer .logo-sosmed{
+    display: flex;
+    margin-left: 20px;
+}
+
+.footer .logo-sosmed a {
+    margin-right: 20px;
+}
+
+.footer .credit{
+    font-size: .8rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    color: white;
+   padding-bottom: 4px;
+}
+
+.footer .credit .text{
+    margin-left: 45px;
+}
+
+/* end */
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    html{
+        overflow-x: hidden;
+    }
+
+    .next, .prev{
+        position: absolute;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        z-index: 2;
+    }
+
+    h2{
+        margin-top: 35px;
+        margin-bottom: 25px;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        margin-left: 20%;
+        margin-right: 20%;
+        color: #fff;
+        font-size: 1rem;
+        display: flex;
+        text-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 18%;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.55);
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        pointer-events: none;
+    }
+
+    .room .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px,2fr));
+        gap: 2rem;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .room .box {
+        background: white;
+        border: .1rem solid #28282833;
+        border-radius: .5rem;
+        box-shadow: 0 .8rem 1.3rem #0000001a;
+        margin-bottom: 4rem;
+    }
+    
+    .room .box .image{
+        height: 25rem;
+        width: 100%;
+        padding: 1.5rem;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .room .box .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+        object-fit: cover;
+    }
+    
+    .room .box .content{
+        padding: 2rem;
+        padding-top: 0;
+    }
+    
+    .room .box .content h3{
+        font-size: 1.75rem;
+        color: #002c4e;
+    }
+    
+    .room .box .content p{
+        font-size: .85rem;
+        color: #414040;
+        padding: .5rem 0;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+    
+    .room .box .content a{
+        color: white;
+        margin-left: 10%;
+        background-color: #005fa7;
+        border-radius: 4px;
+        padding: 10px 38px;
+    }
+
+    .facility .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        grid-gap: 0px;
+        margin-bottom: 10%;
+        width: 100%;
+        justify-items: center;
+    }
+    
+    
+    .facility .box-container .box{
+        text-align: center;
+        width: 72%;
+        height: 100%;
+    }
+    
+    .facility .box-container .box i{
+        height: 2rem;
+        font-size: 4.5rem;
+        color: #296796;
+        margin-bottom: 3.8rem;
+    }
+    
+    .facility .box-container .box h3{
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 535;
+    }
+
+    .footer .box-container .box .logo{
+        margin-left: 45px;
+        margin-top: 25px;
+        font-size: 2rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+    
+    .footer .box-container .box h3{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box a{
+        font-size: .95rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+    }
+    
+    .footer .box-container .box a i{
+        color: white;
+        padding-right: .28rem;
+    }
+    
+    .footer .box-container .box-link h3{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box-link a{
+        font-size: .95rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+        
+    }
+    
+    .footer .box-container .box-link a i{
+        color: white;
+        padding-right: .28rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        overflow-x: hidden;
+    }
+
+    .next, .prev{
+        position: absolute;
+        font-size: 39px;
+        color: rgb(255, 255, 255);
+        z-index: 2;
+    }
+
+    h2{
+        margin-top: 1%;
+        margin-bottom: 0.4%;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .overlay p {
+        margin-left: 20%;
+        margin-right: 20%;
+        color: #fff;
+        font-size: 75%;
+        display: flex;
+        text-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 14%;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.55);
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        pointer-events: none;
+    }
+
+
+    .room .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px,2fr));
+        gap: 2rem;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .room .box {
+        background: white;
+        border: .1rem solid #28282833;
+        border-radius: .5rem;
+        box-shadow: 0 .8rem 1.3rem #0000001a;
+        margin-bottom: 4rem;
+    }
+    
+    .room .box .image{
+        height: 25rem;
+        width: 100%;
+        padding: 1.5rem;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .room .box .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+        object-fit: cover;
+    }
+    
+    .room .box .content{
+        padding: 2rem;
+        padding-top: 0;
+    }
+    
+    .room .box .content h3{
+        font-size: 1.75rem;
+        color: #002c4e;
+    }
+    
+    .room .box .content p{
+        font-size: .85rem;
+        color: #414040;
+        padding: .5rem 0;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+    
+    .room .box .content a{
+        color: white;
+        margin-left: 10%;
+        background-color: #005fa7;
+        border-radius: 4px;
+        padding: 10px 40px;
+    }
+
+    .facility .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        grid-gap: 0px;
+        margin-bottom: 10%;
+        width: 100%;
+        justify-items: center;
+    }
+    
+    
+    .facility .box-container .box{
+        text-align: center;
+        width: 72%;
+        height: 100%;
+    }
+    
+    .facility .box-container .box i{
+        height: 2rem;
+        font-size: 4.5rem;
+        color: #296796;
+        margin-bottom: 3.8rem;
+    }
+    
+    .facility .box-container .box h3{
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 535;
+    }
+
+    .footer .box-container .box .logo{
+        margin-left: 45px;
+        margin-top: 25px;
+        font-size: 2rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+
+    .footer .box-container .box .logo{
+        margin-left: 40px;
+        margin-top: 25px;
+        font-size: 1.5rem;
+        letter-spacing: -.1em;
+        color: white;
+    }
+    
+    
+    
+    .footer .box-container .box h3{
+        font-size: .95rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box a{
+        font-size: .75rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+    }
+    
+    .footer .box-container .box a i{
+        color: white;
+        padding-right: .28rem;
+    }
+    
+    .footer .box-container .box-link h3{
+        font-size: .95rem;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .footer .box-container .box-link a{
+        font-size: .75rem;
+        display: block;
+        color: white;
+        padding: .46rem 0;
+        
+    }
+    
+    .footer .box-container .box-link a i{
+        color: white;
+        padding-right: .28rem;
+    }
+
+    .footer .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        gap: .7rem;
+    }
+
+    .footer .sosmed{
+        padding-top: 1.5rem;
+        color: white;
+        font-size: .95rem;
+    }
+    
+    
+    .footer .logo-sosmed{
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    .footer .logo-sosmed a {
+        margin-right: 10px;
+    }
+
+    .footer .credit{
+        font-size: .6rem;
+        text-align: left;
+        margin-top: 1rem;
+        padding-top: .5rem;
+        color: white;
+       padding-bottom: 4px;
+    }
+    
+    .footer .credit .text{
+        margin-left: 40px;
+    }
+
+}
