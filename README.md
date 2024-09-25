@@ -15,16 +15,16 @@
 
 #### About Page
 - This page will contain the history, story, and another information of VhoTel so that guests can understand and know more about VhoTel
-![About-Page](<Screenshots/Vhotel 2.png>)
+![About-Page](<Screenshots/Vhotel 3.png>)
 
 #### Room Page
 - This page will show all types of rooms available in VhoTel such as their picture, and their specifications, so that guests can know details about the rooms in VhoTel
-![Room-Page](<Screenshots/Vhotel 3.png>)
+![Room-Page](<Screenshots/Vhtoel 2.png>)
 
 #### Facility Page
 - This page will display all the facilities and the information related to the facility provided by VhoTel for guests to enjoy
-![Facility-Page](<Screenshots/Vhotel 4.png>)
+![Facility-Page](<Screenshots/Vhtoel 4.png>)
 
 #### Reservation Page
 - This page will contain a reservation form for the guest to book a room in VhoTel. The guest will need to provide details about the reservation and their personal information
-![Reservation-Page](<Screenshots/Vhotel 5.png>)
+![Reservation-Page](<Screenshots/Vhtoel 5.png>)
